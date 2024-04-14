@@ -10,7 +10,7 @@ WORKDIR /app
 COPY . .
 # install node modules and build assets
 #RUN npm update
-RUN yarn install && yarn run build
+RUN npm install && npm run build
 
 # nginx state for serving content
 FROM nginx:bullseye
